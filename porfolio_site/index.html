@@ -4,9 +4,187 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donny Ha</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="/scripts/index.js"></script>
 </head>
 <body>
-    
+    <!-- navigation -->
+    <nav id="navbar">
+        <span id="logo"><a href="#">LOGO</a></span>
+        <ul>
+            <li><a href="#about">about me</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <span class="social">
+            <a href="#"><img class="social-icon" src="/images/svg/instagram.svg" width="24px" height="24" /></a>
+            <a href="#"><img class="social-icon" src="/images/svg/facebook.svg" width="24px" height="24" /></a>
+            <a href="#"><img class="social-icon" src="/images/svg/twitter.svg" width="24" height="24" /></a>
+        </span>
+    </nav>
+    <!-- /navigation -->
+
+    <!-- main -->
+    <div id="main" class="para">
+        <h1>Hi,<br />
+            my name is Donny<br />
+            and I am a <span class="change">Developer</span>_</h1>
+
+        <div id="social-icons">
+            <img src="images/svg/github.svg" alt="github" height="30px" />
+            <img src="images/svg/linkedin.svg" alt="linkedin" height="30px" />
+            <img src="images/svg/email.svg" alt="email" height="30px" />
+        </div>
+        <!-- /#social-icons -->
+
+        <div class="scroll-down">
+            <p>scroll down</p>
+            <img src="images/svg/arrow.svg" alt="arrow down" height="40px" />
+        </div>
+        <!-- /.scroll-down -->
+    </div>
+    <!-- /#main -->
+
+    <!-- about me -->
+    <div id="about-me" class="para">
+        <h2>about me</h2>
+        <p id="description">
+            Hello, I am Donny and I am a web developer with both front end and back end skills as well as experience working in an e-commerce environment. I have passion for front end, back end, design, data and Unix OS. In terms of education, I have a Bachelor’s degree majoring in Business Information Systems and Accounting from the University of Sydney, Australia, and I am currently working on Web Development Diploma from the University of Winnipeg. When I am not programming or customising my Linux machine/distro hopping, I like to play football, cycle and drink beer.
+        </p>
+        <div id="skills">
+            <h3>skills</h3>
+
+            <div id="front-end" class="skill">
+                <h4>Front End</h4>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>npm</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <!-- /#front-end -->
+
+            <div id="back-end" class="skill">
+                <h4>Back End</h4>
+                <ul>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Composer</li>
+                    <li>XML</li>
+                    <li>JSONery</li>
+                </ul>
+            </div>
+            <!-- /#back-end -->
+
+            <div id="database" class="skill">
+                <h4>Database</h4>
+                <ul>
+                    <li>MySQL</li>
+                    <li>SQLite</li>
+                </ul>
+            </div>
+            <!-- /#database -->
+
+            <div id="version-control" class="skill">
+                <h4>Version Control</h4>
+                <ul>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <!-- /#version-control -->
+
+            <div id="os" class="skill">
+                <h4>Operating System</h4>
+                <ul>
+                    <li>Linux</li>
+                </ul>
+            </div>
+            <!-- /#os -->
+
+            <div id="design" class="skill">
+                <h4>Design</h4>
+                <ul>
+                    <li>Linux</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Animate</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <!-- /#design -->
+        </div>
+        <!-- /.skills -->
+
+        <div class="scroll-down">
+            <p>scroll down</p>
+            <img src="images/svg/arrow.svg" alt="arrow down" height="40px" />
+        </div>
+        <!-- /.scroll-down -->
+    </div>
+    <!-- /#about-me -->
+
+    <!-- projects -->
+    <div id="projects" class="para">
+        <h2>projects</h2>
+
+        <div class="row-odd">
+            <div class="img-container">
+                <img src="images/winnitap.png" alt="winnitap" height="189px" />
+            </div>
+            <div class="project-container">
+                <h3 class="project-title">Winnitap</h3>
+                <p class="project-description">
+                    Beer comparison site that allows users to leave reviews on beer they drank
+                </p>
+                <p class="project-skills">
+                    Front End: HTML, SASS, JavaScript, jQuery<br />
+                    Back End: PHP, MySQL
+                </p>
+            </div>
+        </div>
+        <!-- /.row-odd -->
+
+        <div class="row-even">
+            <div class="img-container">
+                <img src="images/burgerpeg.png" alt="menu decider" height="189px" />
+            </div>
+            <div class="project-container">
+                <h3 class="project-title">Menu Decider</h3>
+                <p class="project-description">
+                    Web Application that allows users to randomly<br />generate menu items
+                </p>
+                <p class="project-skills">
+                    Front End: HTML, SASS, JavaScript, React<br />
+                    Back End: JSON
+                </p>
+            </div>
+        </div>
+        <!-- /.row-even -->
+
+        <div class="row-odd">
+            <div class="img-container">
+                <img src="images/burgerpeg.png" alt="burgerpeg" height="189px" />
+            </div>
+            <div class="project-container">
+                <h3 class="project-title">Burgerpeg</h3>
+                <p class="project-description">
+                    Brochure site for a burger restaurant in Winnipeg
+                </p>
+                <p class="project-skills">
+                    Front End: HTML, SASS, JavaScript
+                </p>
+            </div>
+        </div>
+        <!-- /.row-odd -->
+    </div>
+    <!-- /#projects-->
+
+    <div class="contact"></div>
+
 </body>
 </html>

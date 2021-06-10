@@ -248,17 +248,78 @@ h3 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #fff;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cf649a;
 }
 
 .row-odd .project-container {
   text-align: right;
+  max-width: 362px;
 }
 
 .row-odd .project-container .project-title {
   color: #cf649a;
   font-size: 30px;
   margin: 0;
+  margin-bottom: 30px;
+}
+
+.row-odd .project-skills {
+  margin-bottom: 30px;
+}
+
+.row-odd .project-description,
+.project-skills {
+  font-size: 15px;
+}
+
+.row-even {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cf649a;
+}
+
+.row-even .project-container {
+  text-align: left;
+  max-width: 362px;
+}
+
+.row-even .project-container .project-title {
+  color: #cf649a;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.row-even .project-skills {
+  margin-bottom: 20px;
+}
+
+.row-even .project-description,
+.project-skills {
+  font-size: 15px;
+}
+
+.row-odd .project-container .exteral-links img {
+  margin-left: 20px;
+}
+
+.row-even .project-container .exteral-links img {
+  margin-right: 20px;
 }
 
 /* contact */

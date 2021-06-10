@@ -25,10 +25,16 @@ html {
   background-attachment: fixed;
   overflow: hidden;
   min-height: 100%;
+  border-bottom: 1px solid #fff;
 }
 
 .change {
   color: #cf649a;
+}
+
+.change a {
+  color: #cf649a;
+  text-decoration: none;
 }
 
 .responsive {
@@ -170,11 +176,90 @@ h1 {
           justify-content: center;
 }
 
-.scroll-down p {
+.scroll-down {
   text-align: center;
 }
 
 /* about me */
+h2 {
+  color: #cf649a;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h3 {
+  color: #cf649a;
+  margin-top: 100px;
+}
+
+#about-me #description {
+  font-size: 20px;
+  text-align: center;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-me #skills {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 816px;
+}
+
+#about-me .container-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#about-me h4 {
+  color: #cf649a;
+}
+
+#about-me ul {
+  list-style-type: none;
+}
+
+#skills {
+  margin-bottom: 65px;
+}
+
 /* projects */
+.row-odd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+}
+
+.row-odd .project-container {
+  text-align: right;
+}
+
+.row-odd .project-container .project-title {
+  color: #cf649a;
+  font-size: 30px;
+  margin: 0;
+}
+
 /* contact */
 /*# sourceMappingURL=style.css.map */

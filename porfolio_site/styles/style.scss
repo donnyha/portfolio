@@ -65,15 +65,21 @@ html {
 }
 
 .para {
-  @include parallax;
+  @include parallax();
+  border-bottom: 1px solid #fff;
 }
 
 .change {
   color: $pink;
 }
 
+.change a {
+  color: $pink;
+  text-decoration: none;
+}
+
 .responsive {
-  @include responsive;
+  @include responsive();
 }
 
 /* navigation */
@@ -93,7 +99,7 @@ nav {
 }
 
 nav ul {
-  @include flex-row-evenly;
+  @include flex-row-evenly();
 
   margin: 0;
   list-style-type: none;
@@ -125,13 +131,13 @@ nav ul li a:hover {
 }
 
 .social {
-  @include flex-row-evenly;
+  @include flex-row-evenly();
   align-items: center;
 }
 
 /* main */
 .container-center {
-  @include flex-row-center;
+  @include flex-row-center();
 }
 
 h1 {
@@ -140,7 +146,7 @@ h1 {
 }
 
 #social-icons {
-  @include flex-row-between;
+  @include flex-row-between();
   margin-left: auto;
   margin-right: auto;
   width: 400px;
@@ -154,13 +160,73 @@ h1 {
 }
 
 .scroll-down {
-  @include flex-column-center;
+  @include flex-column-center();
 }
 
-.scroll-down p {
+.scroll-down {
   text-align: center;
 }
 
 /* about me */
+h2 {
+  color: $pink;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h3 {
+  color: $pink;
+  margin-top: 100px;
+}
+
+#about-me #description {
+  font-size: 20px;
+  text-align: center;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-me #skills {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 816px;
+}
+
+#about-me .container-row {
+  @include flex-row-between();
+}
+
+#about-me h4 {
+  color: $pink;
+}
+
+#about-me ul {
+  list-style-type: none;
+}
+
+#skills {
+  margin-bottom: 65px;
+}
+
 /* projects */
+.row-odd {
+  @include flex-row-between();
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+}
+
+.row-odd .project-container {
+  text-align: right;
+}
+
+.row-odd .project-container .project-title {
+  color: $pink;
+  font-size: 30px;
+  margin: 0;
+}
 /* contact */

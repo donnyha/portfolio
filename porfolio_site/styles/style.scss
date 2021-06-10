@@ -24,6 +24,30 @@ $pink: #cf649a;
   justify-content: space-evenly;
 }
 
+@mixin flex-row-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@mixin flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* general */
 * {
   padding: 0;
@@ -42,6 +66,10 @@ html {
 
 .para {
   @include parallax;
+}
+
+.change {
+  color: $pink;
 }
 
 .responsive {
@@ -65,9 +93,7 @@ nav {
 }
 
 nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  @include flex-row-evenly;
 
   margin: 0;
   list-style-type: none;
@@ -104,6 +130,36 @@ nav ul li a:hover {
 }
 
 /* main */
+.container-center {
+  @include flex-row-center;
+}
+
+h1 {
+  margin-top: 185px;
+  font-size: 100px;
+}
+
+#social-icons {
+  @include flex-row-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#social-icons img {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.scroll-down {
+  @include flex-column-center;
+}
+
+.scroll-down p {
+  text-align: center;
+}
 
 /* about me */
 /* projects */

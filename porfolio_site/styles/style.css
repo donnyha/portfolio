@@ -17,6 +17,100 @@ html {
   scroll-behavior: smooth;
 }
 
+.para {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* navigation */
+nav {
+  background-color: rgba(27, 27, 50, 0.7);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  height: 70px;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 9fr 2fr;
+      grid-template-columns: 2fr 9fr 2fr;
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  z-index: 10000;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #cf649a;
+}
+
+#logo a {
+  font-family: "Concert One";
+  font-size: 30px;
+  line-height: 54px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* main */
 /* about me */
 /* projects */

@@ -3,7 +3,7 @@ $navy: #1b1b32;
 $pink: #cf649a;
 
 /* mixins */
-@mixin parralax {
+@mixin parallax {
   position: relative;
   background-position: center;
   background-size: cover;
@@ -11,6 +11,17 @@ $pink: #cf649a;
   background-attachment: fixed;
   overflow: hidden;
   min-height: 100%;
+}
+
+@mixin responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin flex-row-evenly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /* general */
@@ -29,7 +40,71 @@ html {
   scroll-behavior: smooth;
 }
 
+.para {
+  @include parallax;
+}
+
+.responsive {
+  @include responsive;
+}
+
+/* navigation */
+nav {
+  background-color: rgba(27, 27, 50, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  height: 70px;
+  transition: top 0.3s;
+
+  display: grid;
+  grid-template-columns: 2fr 9fr 2fr;
+
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  z-index: 10000;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: $pink;
+}
+
+#logo a {
+  font-family: "Concert One";
+  font-size: 30px;
+  line-height: 54px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social {
+  @include flex-row-evenly;
+  align-items: center;
+}
+
 /* main */
+
 /* about me */
 /* projects */
 /* contact */

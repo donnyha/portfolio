@@ -66,7 +66,7 @@ html {
 
 .para {
   @include parallax();
-  // border-bottom: 1px solid #fff;
+  // border-bottom: 1px solid $pink;
 }
 
 .change {
@@ -135,6 +135,10 @@ nav ul li a:hover {
   align-items: center;
 }
 
+.social img#email {
+  margin-top: 6px;
+}
+
 /* main */
 .container-center {
   @include flex-row-center();
@@ -146,9 +150,9 @@ h1 {
 }
 
 #social-icons {
-  @include flex-row-between();
-  margin-left: auto;
-  margin-right: auto;
+  @include flex-row-evenly();
+  vertical-align: baseline;
+  margin-left: 576px;
   width: 400px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -159,12 +163,18 @@ h1 {
   margin-left: 30px;
 }
 
-.scroll-down {
-  @include flex-column-center();
+#social-icons img#mail {
+  margin-top: 5px;
 }
 
 .scroll-down {
+  @include flex-column-center();
   text-align: center;
+}
+
+.scroll-down a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* about me */
@@ -284,6 +294,7 @@ h3 {
 /* contact */
 
 #contact h2 {
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
@@ -291,6 +302,7 @@ h3 {
   height: 200px;
   text-align: center;
   line-height: 6em;
+  margin-bottom: 50px;
 }
 
 #contact p {

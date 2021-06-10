@@ -66,7 +66,7 @@ html {
 
 .para {
   @include parallax();
-  border-bottom: 1px solid #fff;
+  // border-bottom: 1px solid #fff;
 }
 
 .change {
@@ -282,3 +282,17 @@ h3 {
   margin-right: 20px;
 }
 /* contact */
+
+#contact h2 {
+  margin-bottom: 100px;
+}
+
+#contact .container {
+  height: 200px;
+  text-align: center;
+  line-height: 6em;
+}
+
+#contact p {
+  font-size: 30px;
+}

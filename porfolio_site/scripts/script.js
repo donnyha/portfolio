@@ -1,4 +1,15 @@
 window.onload = () => {
+    hideNav();
+    typewriter();
+}
+
+/**
+ * hides navs on scroll down and show nav on scroll up
+ *
+ * @return
+ */
+function hideNav()
+{
     // get previous scroll position
     let prevPos = window.pageYOffset;
 
@@ -17,4 +28,14 @@ window.onload = () => {
         }
         prevPos = currentPos;
     }
+}
+
+/**
+ * typewriter animation
+ *
+ * @return
+ */
+function typewriter()
+{
+
 }

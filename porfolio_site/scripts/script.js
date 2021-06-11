@@ -58,10 +58,10 @@ function typewriter()
 
     (function type(){
         // if count goes through all texts
-        if(count === texts.length){
-            // reset the count
-            count = 0;
-        }
+        // if(count === texts.length){
+        //     // reset the count
+        //     count = 0;
+        // }
         // set current text as respective text
         currentText = texts[count];
 

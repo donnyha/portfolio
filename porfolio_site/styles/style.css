@@ -88,8 +88,8 @@ nav ul li a {
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 nav ul li a:hover {
@@ -125,22 +125,25 @@ nav ul li a:hover {
 }
 
 /* main */
-.container-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 h1 {
   margin-top: 185px;
+  margin-left: 330px;
   font-size: 100px;
+}
+
+.typing {
+  position: relative;
+  margin-left: 10px;
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  top: 95px;
+  width: 60px;
+  border-bottom: 10px solid #fff;
+  -webkit-animation: blink 0.7s infinite ease-in-out;
+          animation: blink 0.7s infinite ease-in-out;
 }
 
 #social-icons {
@@ -346,5 +349,29 @@ h3 {
 
 #contact p {
   font-size: 30px;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

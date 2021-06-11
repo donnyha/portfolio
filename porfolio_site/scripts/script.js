@@ -78,6 +78,6 @@ function typewriter()
             // reset index
             index = 0;
         }
-        setTimeout(type, 200);
+        setTimeout(type, 100);
     }());
 }

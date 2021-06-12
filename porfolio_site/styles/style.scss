@@ -147,12 +147,12 @@ h1 {
   // width: 1057px;
 }
 
-.typing {
+.txt-type {
   position: relative;
   margin-left: 10px;
 }
 
-.typing::after {
+.txt-type::after {
   content: "";
   position: absolute;
   top: 95px;
@@ -183,6 +183,7 @@ h1 {
 .scroll-down {
   @include flex-column-center();
   text-align: center;
+  animation: float 1.5s ease-in-out infinite;
 }
 
 .scroll-down a {
@@ -197,6 +198,8 @@ h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
+
+  animation: opacity 0.7s ease-in;
 }
 
 h3 {
@@ -331,5 +334,17 @@ h3 {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }

@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donny Ha</title>
     <link rel="stylesheet" href="/styles/style.css" />
-    <script src="/scripts/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="module" defer src="/scripts/main.js"></script>
 </head>
 <body>
     <!-- navigation -->
     <nav id="navbar">
-        <span id="logo"><a href="#">LOGO</a></span>
+        <span id="logo" data-aos="fade-down"><a href="#">LOGO</a></span>
         <ul>
-            <li><a href="#about-me">about me</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#about-me" data-aos="fade-down" data-aos-delay="100">about me</a></li>
+            <li><a href="#projects" data-aos="fade-down" data-aos-delay="200">projects</a></li>
+            <li><a href="#contact" data-aos="fade-down" data-aos-delay="300">contact</a></li>
         </ul>
         <span class="social">
-            <a href="https://github.com/donnyha"><img class="social-icon" src="/images/svg/github.svg" width="24px" height="24" /></a>
-            <a href="https://www.linkedin.com/in/donnyha/"><img class="social-icon" src="/images/svg/linkedin.svg" width="24px" height="24" /></a>
-            <a href="#contact"><img id="email" class="social-icon" src="/images/svg/email.svg" height="22px" /></a>
+            <a href="https://github.com/donnyha" data-aos="fade-down" data-aos-delay="400"><img class="social-icon" src="/images/svg/github.svg" width="24px" height="24" /></a>
+            <a href="https://www.linkedin.com/in/donnyha/" data-aos="fade-down" data-aos-delay="500"><img class="social-icon" src="/images/svg/linkedin.svg" width="24px" height="24" /></a>
+            <a href="#contact" data-aos="fade-down" data-aos-delay="600"><img id="email" class="social-icon" src="/images/svg/email.svg" height="22px" /></a>
         </span>
     </nav>
     <!-- /navigation -->
@@ -30,21 +31,21 @@
         <div class="container-center">
             <h1>Hi,<br />
                 my name is Donny<br />
-                and I am a <span class="change typing"></span>
+                and I am a <span class="change txt-type" data-wait="2000" data-words='["Designer", "Cyclist", "Footballer", "Developer"]'></span><span id="cursor"></span>
             </h1>
         </div>
 
         <div id="social-icons">
-            <a href="https://github.com/donnyha"></a><img src="images/svg/github.svg" alt="github" height="30px" /></a>
-            <a href="https://www.linkedin.com/in/donnyha/"></a><img src="images/svg/linkedin.svg" alt="linkedin" height="30px" /></a>
-            <a href="#contact"><img id="mail" src="images/svg/email.svg" alt="email" height="28px" /></a>
+            <a href="https://github.com/donnyha"></a><img src="images/svg/github.svg" alt="github" height="30px" data-aos="fade-up" data-aos-delay="700" /></a>
+            <a href="https://www.linkedin.com/in/donnyha/"></a><img src="images/svg/linkedin.svg" alt="linkedin" height="30px" data-aos="fade-up" data-aos-delay="800" /></a>
+            <a href="#contact"><img id="mail" src="images/svg/email.svg" alt="email" height="28px" data-aos="fade-up" data-aos-delay="900" /></a>
         </div>
         <!-- /#social-icons -->
 
         <div class="scroll-down">
             <a href="#about-me">
                 <p>scroll down</p>
-                <img src="images/svg/arrow.svg" alt="arrow down" height="40px" />
+                <img class="arrow-down" src="images/svg/arrow.svg" alt="arrow down" height="40px" />
             </a>
         </div>
         <!-- /.scroll-down -->
@@ -53,18 +54,18 @@
 
     <!-- about me -->
     <div id="about-me" class="para">
-        <h2>about me</h2>
-        <p id="description">
+        <h2 data-aos="fade-up">about me</h2>
+        <p id="description" data-aos="fade-up">
             Hello, I am Donny and I am a web developer with both front end and back end skills as well as experience working in an <span class="change"><a href="https://mozo.com.au/">e-commerce environment</a></span>.<br /><br /> 
             I have passion for front end, back end, design, data and Unix OS.<br /><br />
             In terms of education, I have a Bachelor’s degree majoring in Business Information Systems and Accounting from the University of Sydney, Australia, and I am currently working on Web Development Diploma from the University of Winnipeg.<br /><br /> 
             When I am not programming or customising my Linux machine/distro hopping, I like to play football, cycle and drink beer.
         </p>
         <div id="skills">
-            <h3>skills</h3>
+            <h3 data-aos="fade-up">skills</h3>
 
             <div class="container-row">
-                <div id="front-end" class="skill">
+                <div id="front-end" class="skill" data-aos="fade-up" data-aos-delay="100">
                     <h4>Front End</h4>
                     <ul>
                         <li>HTML5</li>
@@ -78,19 +79,19 @@
                 </div>
                 <!-- /#front-end -->
 
-                <div id="back-end" class="skill">
+                <div id="back-end" class="skill" data-aos="fade-up" data-aos-delay="150">
                     <h4>Back End</h4>
                     <ul>
                         <li>PHP</li>
                         <li>Laravel</li>
                         <li>Composer</li>
                         <li>XML</li>
-                        <li>JSONery</li>
+                        <li>JSON</li>
                     </ul>
                 </div>
                 <!-- /#back-end -->
 
-                <div id="database" class="skill">
+                <div id="database" class="skill" data-aos="fade-up" data-aos-delay="200">
                     <h4>Database</h4>
                     <ul>
                         <li>MySQL</li>
@@ -99,7 +100,7 @@
                 </div>
                 <!-- /#database -->
 
-                <div id="version-control" class="skill">
+                <div id="version-control" class="skill" data-aos="fade-up" data-aos-delay="250">
                     <h4>Version Control</h4>
                     <ul>
                         <li>Git</li>
@@ -107,7 +108,7 @@
                 </div>
                 <!-- /#version-control -->
 
-                <div id="os" class="skill">
+                <div id="os" class="skill" data-aos="fade-up" data-aos-delay="350">
                     <h4>Operating System</h4>
                     <ul>
                         <li>Linux</li>
@@ -115,7 +116,7 @@
                 </div>
                 <!-- /#os -->
 
-                <div id="design" class="skill">
+                <div id="design" class="skill" data-aos="fade-up" data-aos-delay="400">
                     <h4>Design</h4>
                     <ul>
                         <li>Linux</li>
@@ -131,19 +132,14 @@
         </div>
         <!-- /.skills -->
 
-        <!-- <div class="scroll-down">
-            <p>scroll down</p>
-            <img src="images/svg/arrow.svg" alt="arrow down" height="40px" />
-        </div> -->
-        <!-- /.scroll-down -->
     </div>
     <!-- /#about-me -->
 
     <!-- projects -->
-    <div id="projects" class="para">
+    <div id="projects" class="para" data-aos="fade-up">
         <h2>projects</h2>
 
-        <div class="row-odd">
+        <div class="row-odd" data-aos="fade-left" data-aos-delay="100" data-aos-offset="250">
             <div class="img-container">
                 <img src="images/winnitap.png" alt="winnitap" height="189px" />
             </div>
@@ -165,7 +161,7 @@
         </div>
         <!-- /.row-odd -->
 
-        <div class="row-even">
+        <div class="row-even" data-aos="fade-right" data-aos-delay="100" data-aos-offset="250">
             <div class="project-container">
                 <h3 class="project-title">Menu Decider</h3>
                 <p class="project-description">
@@ -187,7 +183,7 @@
         </div>
         <!-- /.row-even -->
 
-        <div class="row-odd">
+        <div class="row-odd" data-aos="fade-left" data-aos-delay="100" data-aos-offset="250">
             <div class="img-container">
                 <img src="images/burgerpeg.png" alt="burgerpeg" height="189px" />
             </div>
@@ -208,22 +204,25 @@
         </div>
         <!-- /.row-odd -->
 
-        <!-- <div class="scroll-down">
-            <p>scroll down</p>
-            <img src="images/svg/arrow.svg" alt="arrow down" height="40px" />
-        </div> -->
-        <!-- /.scroll-down -->
     </div>
     <!-- /#projects-->
 
     <div id="contact" class="para">
-        <h2>Contact</h2>
+        <h2 data-aos="fade-up">Contact</h2>
         <div class="container">
-            <p class="contact-info">Email: donny.dh.ha@gmail.com</p>
-            <p class="contact-info">LinkedIn: /in/donnyha</p>
-            <p class="contact-info">Github: /donnyha </p>
+            <p class="contact-info" data-aos="fade-up" data-aos-delay="200" data-aos-offset="200">Email: donny.dh.ha@gmail.com</p>
+            <p class="contact-info" data-aos="fade-up" data-aos-delay="200" data-aos-offset="200">LinkedIn: /in/donnyha</p>
+            <p class="contact-info" data-aos="fade-up" data-aos-delay="200" data-aos-offset="200">Github: /donnyha </p>
         </div>
     </div>
     <!-- /.contact -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 200,
+          duration: 500
+      });
+    </script>
 </body>
 </html>

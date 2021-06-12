@@ -131,12 +131,12 @@ h1 {
   font-size: 100px;
 }
 
-.typing {
+.txt-type {
   position: relative;
   margin-left: 10px;
 }
 
-.typing::after {
+.txt-type::after {
   content: "";
   position: absolute;
   top: 95px;
@@ -185,6 +185,8 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  -webkit-animation: float 1.5s ease-in-out infinite;
+          animation: float 1.5s ease-in-out infinite;
 }
 
 .scroll-down a {
@@ -199,6 +201,8 @@ h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
+  -webkit-animation: opacity 0.7s ease-in;
+          animation: opacity 0.7s ease-in;
 }
 
 h3 {
@@ -372,6 +376,36 @@ h3 {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-5px);
+            transform: translatey(-5px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-5px);
+            transform: translatey(-5px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
   }
 }
 /*# sourceMappingURL=style.css.map */

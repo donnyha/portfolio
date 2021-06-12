@@ -147,12 +147,12 @@ h1 {
   // width: 1057px;
 }
 
-.typing {
+.txt-type {
   position: relative;
   margin-left: 10px;
 }
 
-.typing::after {
+.txt-type::after {
   content: "";
   position: absolute;
   top: 95px;

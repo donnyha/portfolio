@@ -7,7 +7,7 @@ function Mix(props)
 
     // loop to slice and push food items into to foods array
     for(let i=props.foods.length; i>0; i--) {
-        const randomNum = Math.floor(Math.random() * (i + 1.5));
+        const randomNum = Math.floor(Math.random() * (i + 1));
         foods[i] = props.foods[randomNum].name;
     }
 

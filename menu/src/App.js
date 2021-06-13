@@ -29,6 +29,17 @@ class App extends React.Component
     {
         const foodItems = this.state.foods.map(item => <Show key={item.id} item={item} name={item.name} />)
 
+        let clicked = this.state.clicked
+
+        let result;
+
+        if(clicked) {
+            result = <Mix foods={this.state.foods} />
+        }
+        else {
+            result = "Please click the button to shuffle"
+        }
+
         return (
             <div className="App">
                 <h1>Menu Decider</h1>
@@ -49,7 +60,7 @@ class App extends React.Component
 
                         {/* Menu for the day */}
                         <div className="row">
-                                <Mix foods={this.state.foods} />
+                            {result}
                         </div>
 
                     </div>

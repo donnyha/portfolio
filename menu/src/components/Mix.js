@@ -6,9 +6,10 @@ function Mix(props)
     let foods = []
 
     // loop to slice and push food items into to foods array
-    for(let i=props.foods.length; i>0; i--) {
+    for(let i=props.foods.length - 1; i>0; i--) {
         const randomNum = Math.floor(Math.random() * (i + 1));
         foods[i] = props.foods[randomNum].name;
+        console.log(randomNum);
     }
 
     return(

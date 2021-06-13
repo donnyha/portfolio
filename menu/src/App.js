@@ -22,17 +22,17 @@ class App extends React.Component
     handleClick()
     {
         this.setState({clicked: true})
-        console.log('Clicked!')
     }
 
     render()
     {
+        // map out the foodsData
         const foodItems = this.state.foods.map(item => <Show key={item.id} item={item} name={item.name} />)
 
         let clicked = this.state.clicked
-
         let result;
 
+        // if the button has been clicked. Mix is used
         if(clicked) {
             result = <Mix foods={this.state.foods} />
         }

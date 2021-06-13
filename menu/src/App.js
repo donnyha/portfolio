@@ -1,45 +1,58 @@
-import './App.css';
+// components
+import React from 'react'
+import Food from './components/Food'
 
-function App() 
+// css
+import './styles/App.css'
+
+class App extends React.Component
 {
-    return (
-        <div className="App">
-            <h1>Menu Decider</h1>
+    constructor()
+    {
+        super()
+    }
 
-                {/* Display Week */}
-                <table>
+    render()
+    {
+        return (
+            <div className="App">
+                <h1>Menu Decider</h1>
 
-                    {/* Days of the week */}
-                    <tr>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
-                        <th>Sunday</th>
-                    </tr>
+                    {/* Display Week */}
+                    <table>
 
-                    {/* Menu for the day */}
-                    <tr>
-                        <td class="day"></td>
-                        <td class="day"></td>
-                        <td class="day"></td>
-                        <td class="day"></td>
-                        <td class="day"></td>
-                        <td class="day"></td>
-                        <td class="day"></td>
-                    </tr>
+                        {/* Days of the week */}
+                        <tr>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
 
-                </table>
+                        {/* Menu for the day */}
+                        <tr>
+                            <td class="day"></td>
+                            <td class="day"></td>
+                            <td class="day"></td>
+                            <td class="day"></td>
+                            <td class="day"></td>
+                            <td class="day"></td>
+                            <td class="day"></td>
+                        </tr>
 
-                {/* Display Menu */}
-                <div id="menu"><strong>This is Menu</strong><br /></div>
+                    </table>
 
-                {/* Button */}
-                <button id="mix">Randomise</button>
-        </div>
-    );
+                    {/* Display Menu */}
+                    <div id="menu"><strong>This is Menu</strong><br /></div>
+
+                    {/* Button */}
+                    <button id="mix">Randomise</button>
+            </div>
+        );
+    }
 }
 
 export default App;

@@ -1,6 +1,7 @@
 // components
 import React from 'react'
 import Show from './components/Show'
+import Mix from './components/Mix'
 import foodsData from './foodsData'
 
 // css
@@ -14,42 +15,48 @@ class App extends React.Component
         this.state = {
             foods: foodsData
         }
+        this.mix = this.mix.bind(this)
+    }
+
+    mix()
+    {
+        console.log('Mixing!')
     }
 
     render()
     {
-        const foodItems = this.state.foods.map(item => <Show key={item.id} item={item} />)
+        const foodItems = this.state.foods.map(item => <Show key={item.id} item={item} handleChange={this.mix} />)
 
         return (
             <div className="App">
                 <h1>Menu Decider</h1>
 
                     {/* Display Week */}
-                    <table>
+                    <div className="table">
 
                         {/* Days of the week */}
-                        <tr>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                            <th>Saturday</th>
-                            <th>Sunday</th>
-                        </tr>
+                        <div className="row">
+                            <div className="day">Monday</div>
+                            <div className="day">Tuesday</div>
+                            <div className="day">Wednesday</div>
+                            <div className="day">divursday</div>
+                            <div className="day">Friday</div>
+                            <div className="day">Saturday</div>
+                            <div className="day">Sunday</div>
+                        </div>
 
                         {/* Menu for the day */}
-                        <tr>
-                            <td class="day"></td>
-                            <td class="day"></td>
-                            <td class="day"></td>
-                            <td class="day"></td>
-                            <td class="day"></td>
-                            <td class="day"></td>
-                            <td class="day"></td>
-                        </tr>
+                        <div className="row">
+                            <div className="day-food"></div>
+                            <div className="day-food"></div>
+                            <div className="day-food"></div>
+                            <div className="day-food"></div>
+                            <div className="day-food"></div>
+                            <div className="day-food"></div>
+                            <div className="day-food"></div>
+                        </div>
 
-                    </table>
+                    </div>
 
                     {/* Display Menu */}
                     <div id="menu">

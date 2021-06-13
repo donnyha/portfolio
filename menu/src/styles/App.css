@@ -1,11 +1,14 @@
-table {
+.table {
   border: 1px solid #000;
 }
 
-table tr {
+.table .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   border: 1px solid #000;
 }
 
-table td {
+.table .day-food {
   border: 1px solid #000;
 }

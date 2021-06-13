@@ -13,15 +13,21 @@ class App extends React.Component
     {
         super()
         this.state = {
-            foods: foodsData
+            foods: foodsData,
+            clicked: false
         }
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick()
+    {
+        this.setState({clicked: true})
+        console.log('Clicked!')
     }
 
     render()
     {
         const foodItems = this.state.foods.map(item => <Show key={item.id} item={item} name={item.name} />)
-        
-        // const mixedFoodItems = this.state.foods.map(item => <Mix key={item.id} item={item} />)
 
         return (
             <div className="App">
@@ -55,9 +61,9 @@ class App extends React.Component
                     </div>
 
                     {/* Button */}
-                    <button id="mix">Randomise</button>
+                    <button id="mix" onClick={this.handleClick}>Randomise</button>
             </div>
-        );
+        )
     }
 }
 

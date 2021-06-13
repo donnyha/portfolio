@@ -9,6 +9,12 @@
   border: 1px solid #000;
 }
 
+.table .row p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .table .day-food {
   border: 1px solid #000;
 }

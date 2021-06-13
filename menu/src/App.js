@@ -15,17 +15,13 @@ class App extends React.Component
         this.state = {
             foods: foodsData
         }
-        this.mix = this.mix.bind(this)
-    }
-
-    mix()
-    {
-        console.log('Mixing!')
     }
 
     render()
     {
-        const foodItems = this.state.foods.map(item => <Show key={item.id} item={item} handleChange={this.mix} />)
+        const foodItems = this.state.foods.map(item => <Show key={item.id} item={item} name={item.name} />)
+        
+        // const mixedFoodItems = this.state.foods.map(item => <Mix key={item.id} item={item} />)
 
         return (
             <div className="App">
@@ -39,7 +35,7 @@ class App extends React.Component
                             <div className="day">Monday</div>
                             <div className="day">Tuesday</div>
                             <div className="day">Wednesday</div>
-                            <div className="day">divursday</div>
+                            <div className="day">Thursday</div>
                             <div className="day">Friday</div>
                             <div className="day">Saturday</div>
                             <div className="day">Sunday</div>
@@ -47,13 +43,7 @@ class App extends React.Component
 
                         {/* Menu for the day */}
                         <div className="row">
-                            <div className="day-food"></div>
-                            <div className="day-food"></div>
-                            <div className="day-food"></div>
-                            <div className="day-food"></div>
-                            <div className="day-food"></div>
-                            <div className="day-food"></div>
-                            <div className="day-food"></div>
+                                <Mix foods={this.state.foods} />
                         </div>
 
                     </div>

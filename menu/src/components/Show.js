@@ -4,7 +4,7 @@ function Show(props)
 {
     return(
         <div className="food-items">
-            <p>{props.item.name}</p>
+            <p>{props.name}</p>
         </div>
     )
 }

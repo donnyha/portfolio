@@ -49,9 +49,13 @@ class App extends React.Component
                     <div className="container">
                         {/* Display Menu */}
                         <div id="menu">
-                            <strong>Menu</strong><br />
-                            {foodItems}
+                            <h2>Menu</h2><br />
+                            <ul id="food-list">
+                                {foodItems}
+                            </ul>
                         </div>
+
+                        <h2>Mixer</h2>
 
                         {/* Display Week */}
                         <table>

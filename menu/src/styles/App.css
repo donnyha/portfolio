@@ -20,6 +20,19 @@ h1 {
   margin-bottom: 50px;
 }
 
+h2 {
+  text-align: center;
+}
+
+#food-list {
+  list-style-type: none;
+}
+
+#food-list li {
+  display: inline-block;
+  margin: 10px;
+}
+
 table {
   display: inline-block;
   margin-left: auto;

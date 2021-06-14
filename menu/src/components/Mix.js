@@ -13,15 +13,15 @@ function Mix(props)
     }
 
     return(
-        <ul>
-            <li>{foods[1]}</li>
-            <li>{foods[2]}</li>
-            <li>{foods[3]}</li>
-            <li>{foods[4]}</li>
-            <li>{foods[5]}</li>
-            <li>{foods[6]}</li>
-            <li>{foods[7]}</li>
-        </ul>
+        <tr id="mix-food">
+            <td>{foods[1]}</td>
+            <td>{foods[2]}</td>
+            <td>{foods[3]}</td>
+            <td>{foods[4]}</td>
+            <td>{foods[5]}</td>
+            <td>{foods[6]}</td>
+            <td>{foods[7]}</td>
+        </tr>
     )
 }
 

@@ -37,42 +37,45 @@ class App extends React.Component
             result = <Mix foods={this.state.foods} />
         }
         else {
-            result = "Please click the button to shuffle"
+            result = ""
         }
 
         return (
             <div className="App">
-                <h1>Menu Decider</h1>
+                <div id="wrapper">
 
-                    {/* Display Week */}
-                    <div className="table">
+                    <h1>Menu Decider</h1>
 
-                        {/* Days of the week */}
-                        <div className="row">
-                            <div className="day">Monday</div>
-                            <div className="day">Tuesday</div>
-                            <div className="day">Wednesday</div>
-                            <div className="day">Thursday</div>
-                            <div className="day">Friday</div>
-                            <div className="day">Saturday</div>
-                            <div className="day">Sunday</div>
+                    <div className="container">
+                        {/* Display Menu */}
+                        <div id="menu">
+                            <strong>Menu</strong><br />
+                            {foodItems}
                         </div>
 
-                        {/* Menu for the day */}
-                        <div className="row">
+                        {/* Display Week */}
+                        <table>
+                            {/* Days of the week */}
+                            <tr>
+                                <th className="day">Monday</th>
+                                <th className="day">Tuesday</th>
+                                <th className="day">Wednesday</th>
+                                <th className="day">Thursday</th>
+                                <th className="day">Friday</th>
+                                <th className="day">Saturday</th>
+                                <th className="day">Sunday</th>
+                            </tr>
+
+                            {/* Menu for the day */}
                             {result}
-                        </div>
-
-                    </div>
-
-                    {/* Display Menu */}
-                    <div id="menu">
-                        <strong>This is Menu</strong><br />
-                        {foodItems}
+                        </table>
                     </div>
 
                     {/* Button */}
-                    <button id="mix" onClick={this.handleClick}>Randomise</button>
+                    <div className="button">
+                        <button id="mix" onClick={this.handleClick}>Randomise</button>
+                    </div>
+                </div>
             </div>
         )
     }

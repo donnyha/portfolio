@@ -1,7 +1,7 @@
 h1 {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 #wrapper {
@@ -40,7 +40,7 @@ h2 {
 
 #food-list li {
   display: inline-block;
-  margin: 10px;
+  margin: 20px;
 }
 
 table {
@@ -48,7 +48,6 @@ table {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-bottom: 10px;
 }
 
 table th,
@@ -70,7 +69,7 @@ button {
   border-radius: 1rem;
   padding: 20px;
   transition: 0.3s ease-in-out;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 button:hover {

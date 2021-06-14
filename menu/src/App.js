@@ -1,8 +1,12 @@
 // components
-import React from 'react'
+import React, {useEffect} from 'react'
 import Show from './components/Show'
 import Mix from './components/Mix'
 import foodsData from './foodsData'
+
+// aos library
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 // css
 import './styles/App.css'
@@ -25,7 +29,9 @@ class App extends React.Component
     }
 
     render()
-    {
+    {        
+        Aos.init()
+
         // map out the foodsData
         const foodItems = this.state.foods.map(item => <Show key={item.id} item={item} name={item.name} />)
 
@@ -37,42 +43,49 @@ class App extends React.Component
             result = <Mix foods={this.state.foods} />
         }
         else {
-            result = "Please click the button to shuffle"
+            result = ""
         }
 
         return (
             <div className="App">
-                <h1>Menu Decider</h1>
+                <div id="wrapper">
 
-                    {/* Display Week */}
-                    <div className="table">
+                    <h1 data-aos="fade-down" data-aos-delay="100">Menu Decider</h1>
 
-                        {/* Days of the week */}
-                        <div className="row">
-                            <div className="day">Monday</div>
-                            <div className="day">Tuesday</div>
-                            <div className="day">Wednesday</div>
-                            <div className="day">Thursday</div>
-                            <div className="day">Friday</div>
-                            <div className="day">Saturday</div>
-                            <div className="day">Sunday</div>
+                    <div className="container">
+                        {/* Display Menu */}
+                        <div id="menu">
+                            <h2 data-aos="fade-down" data-aos-delay="300">Menu</h2><br />
+                            <ul id="food-list" data-aos="fade-down" data-aos-delay="700">
+                                {foodItems}
+                            </ul>
                         </div>
 
-                        {/* Menu for the day */}
-                        <div className="row">
+                        <h2 data-aos="fade-up" data-aos-delay="900">Mixer</h2>
+
+                        {/* Display Week */}
+                        <table data-aos="fade-up" data-aos-delay="1100">
+                            {/* Days of the week */}
+                            <tr>
+                                <th className="day">Monday</th>
+                                <th className="day">Tuesday</th>
+                                <th className="day">Wednesday</th>
+                                <th className="day">Thursday</th>
+                                <th className="day">Friday</th>
+                                <th className="day">Saturday</th>
+                                <th className="day">Sunday</th>
+                            </tr>
+
+                            {/* Menu for the day */}
                             {result}
-                        </div>
-
-                    </div>
-
-                    {/* Display Menu */}
-                    <div id="menu">
-                        <strong>This is Menu</strong><br />
-                        {foodItems}
+                        </table>
                     </div>
 
                     {/* Button */}
-                    <button id="mix" onClick={this.handleClick}>Randomise</button>
+                    <div className="button" data-aos="fade-up" data-aos-delay="1300">
+                        <button id="mix" onClick={this.handleClick}>MIX</button>
+                    </div>
+                </div>
             </div>
         )
     }

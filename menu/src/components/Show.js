@@ -3,9 +3,9 @@ import React from 'react'
 function Show(props)
 {
     return(
-        <div className="food-items">
-            <p>{props.name}</p>
-        </div>
+        <li className="food-items">
+            {props.name}
+        </li>
     )
 }
 

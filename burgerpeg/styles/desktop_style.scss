@@ -1,0 +1,408 @@
+/* Variables */
+$red: #d51e26;
+$light-grey: #d8d7d4;
+$dark-grey: #28292a;
+
+/* Mixins */
+@mixin parralax {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+@mixin heading($font-size, $top, $letter-spacing) {
+  position: absolute;
+  color: #fff;
+  font-size: $font-size;
+  top: $top;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+  text-shadow: 0 0 10px #000;
+}
+
+@mixin flex-row-evenly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin grid-columns-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@mixin responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  line-height: 180%;
+  color: #000;
+  text-align: center;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.parallax {
+  @include parralax;
+}
+
+.responsive {
+  @include responsive;
+}
+
+/* navigation */
+#ham_logo {
+  display: none;
+}
+
+#mnavbar {
+  display: none;
+}
+
+nav {
+  background-color: $red;
+  height: 70px;
+  transition: top 0.3s;
+
+  display: grid;
+  grid-template-columns: 2fr 9fr 2fr;
+
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  z-index: 10000;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#logo a {
+  font-family: "Concert One";
+  font-size: 30px;
+  line-height: 54px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social img {
+  vertical-align: bottom;
+}
+
+.social img#facebook {
+  vertical-align: middle;
+}
+
+/* Parralx 1 */
+h1 {
+  font-family: "Concert One";
+  margin-top: 12%;
+}
+
+#parallax1 {
+  background-image: url(/images/burger1.jpg);
+  background-position: right 0px !important;
+}
+
+.heading {
+  @include heading(550%, 20%, 8px);
+}
+
+/* Parrallax 2 */
+#parallax2 {
+  background-color: $dark-grey;
+  color: #fff;
+  height: auto;
+  width: 100%;
+  @include flex-row-evenly;
+}
+
+div.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+}
+
+.col1 {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  margin-right: 10px;
+}
+
+.col1 #burger1 {
+  background: url("/images/burger8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.col1 #burger2 {
+  background: url("/images/burger7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#burger3 {
+  background: url("/images/burger9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col3 #locally {
+  font-size: 140px;
+  font-weight: 700;
+
+  transform: rotate(90deg);
+  position: relative;
+  top: 16%;
+  right: 41%;
+}
+
+.col3 #made {
+  font-size: 155px;
+  font-weight: 700;
+
+  position: relative;
+  top: 25%;
+  left: -15%;
+}
+
+.col3 #produced {
+  font-size: 120px;
+  font-weight: 700;
+
+  position: relative;
+  top: 10%;
+  right: -1%;
+}
+
+/* Food Menu */
+#food {
+  @include grid-columns-2;
+  max-height: 100%;
+}
+
+#food .col-left {
+  display: flex;
+  flex-direction: column;
+}
+
+#food .col-left h2 {
+  font-family: "Concert One";
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#food .col-left .menu {
+  @include flex-row-evenly();
+}
+
+#food .col-left .food_name {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#food #food-burger {
+  background: url("/images/burger3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include responsive;
+}
+
+/* Drinks Menu */
+#drinks {
+  background-color: $dark-grey;
+  color: #fff;
+  @include grid-columns-2;
+  max-height: 100%;
+}
+
+#drinks #drinks-beer {
+  background: url("/images/beer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include responsive;
+}
+
+#drinks .col-right {
+  display: flex;
+  flex-direction: column;
+}
+
+#drinks .col-right h2 {
+  font-family: "Concert One";
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#drinks .col-right .menu {
+  @include flex-row-evenly();
+}
+
+#drinks .col-right .drink_name {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#drinks .col-left img {
+  @include responsive;
+}
+
+/* Location */
+#location h2 {
+  font-family: "Concert One", "Works Sans", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#map {
+  width: 50%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#addresses {
+  @include flex-row-center;
+}
+
+#exchange,
+#forks {
+  margin: 50px;
+}
+
+#addresses .area {
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* Contact us */
+#contact {
+  background-color: $dark-grey;
+  color: #fff;
+  font-size: 16px;
+}
+
+#contact h2 {
+  color: #fff;
+  font-family: "Concert One", "Works Sans", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#contact h3 {
+  font-size: 30px;
+}
+
+#contact #hours,
+#general {
+  margin-bottom: 100px;
+}
+
+/* Media Query */
+@media (max-width: 960px) {
+  /* navigation*/
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  /* Parallax 1 */
+  .heading {
+    font-size: 250%;
+  }
+
+  /* Food */
+  #food .col-left h2 {
+    font-size: 40px;
+  }
+
+  #food .col-left .food_name {
+    font-size: 20px;
+  }
+
+  /* Drinks */
+  #drinks .col-right h2 {
+    font-size: 40px;
+  }
+
+  #drinks .col-right .drink_name {
+    font-size: 20px;
+  }
+}

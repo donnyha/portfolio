@@ -77,7 +77,7 @@ class App extends React.Component
 
                     {/* Button */}
                     <div className="button">
-                        <button id="mix" onClick={this.handleClick}>Randomise</button>
+                        <button id="mix" onClick={this.handleClick}>MIX</button>
                     </div>
                 </div>
             </div>

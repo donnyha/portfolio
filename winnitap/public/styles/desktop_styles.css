@@ -9,7 +9,9 @@ html {
   height: auto;
   margin: 0;
   font-size: 16px;
-  color: #fff;
+  color: #000;
+  background-color: #ffa500;
+  font-family: "Montserrat", open-sans;
 }
 
 /* header start */
@@ -18,22 +20,53 @@ header {
   z-index: 100;
 }
 
-.logo {
-  color: #fff;
-  font-size: 50px;
-  font-weight: bold;
-  padding: 20px 35px;
+#logo {
+  font-family: "Monoton";
+  font-size: 40px;
   z-index: 10000;
-  position: fixed;
+  margin-left: 20px;
+}
+
+#logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.grid_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
+  position: fixed;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1000;
+}
+
+.grid_item1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.grid_item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -41,14 +74,23 @@ nav {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  width: 100%;
-  z-index: 1000;
+}
+
+.grid_item3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 nav:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav ul {
@@ -72,15 +114,46 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+.errors {
+  text-align: center;
+}
+
+/* flash messages */
+.flash {
+  text-align: center;
+  padding: 5px;
+}
+
+.success {
+  background-color: #a500ff;
+  color: #fff;
+}
+
+.danger {
+  background-color: #ff2600;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+button:active {
+  background-color: #000;
+}
+
 /* header end */
 /* Media Query */
 @media all and (max-width: 960px) {
-  .manitoba_img {
-    width: 50%;
-    height: auto;
+  nav ul li a {
+    font-size: 12px;
   }
 }
-
-/* footer start */
-/* footer end */
 /*# sourceMappingURL=desktop_styles.css.map */

@@ -1,102 +1,140 @@
-
 <?php
 
 require __DIR__ . '/includes/header.inc.php';
 
-?><!-- content start -->
-    <!-- wrapper start-->
-    <div id="wrapper">
-        <h1>Brewaries around you</h1>
-        <div id="map"></div>
+?>
+<!-- content start -->
+<!-- wrapper start-->
+<div id="wrapper">
+    <h1>Brewaries around you</h1>
+    <div id="map"></div>
 
-            <!-- Table -->
-        <table>
-            <!-- Table Header -->
-            <tr>
-                <th>Name</th>
-                <th>Beer</th>
-                <th>Location</th>
-            </tr>
+    <div class="container">
+        <div class="row">
+            <?php foreach($breweries as $brewery) : ?>
+            <div class="item">
+                <h2 class="name"><?=e($brewery['name']) ?></h2>
+                <p class="address"><?=e($brewery['street']) ?> <?=e($brewery['postal_code']) ?></p>
+                <p class="phone">
+                    <?php if($brewery['phone_number'] === NULL) : ?>
+                    N/A
+                    <?php else : ?>
+                    tel: <?=e($brewery['phone_number']) ?>
+                    <?php endif; ?>
+                </p>
+                <div class="opening_container">
+                    <ul class="opening_time">
+                        <li>
+                            <strong>Mon</strong>
+                            <?php if($brewery['open_time_mon'] === NULL) : ?>
+                            closed
+                            <?php else : ?>
+                            <?=e($brewery['open_time_mon']) ?> -
+                            <?php endif; ?>
 
-            <!-- Table Row 1-->
-            <tr>
-                <td>Trans Canada Brewing Co.</td>
-                <td>
-                    <ul>
-                        <li>Bluebeary Ale</li>
-                        <li>Lamp Lighter Amber Ale</li>
-                        <li>Portager Bohemian Pilsner</li>
-                        <li>Cold Brew Coffee Stout</li>
+                            <?php if($brewery['close_time_mon'] === NULL) : ?>
+                            <?php else : ?>
+                            <?=e($brewery['close_time_mon']) ?>
+                            <?php endif; ?>
+                        </li>
+                        <li>
+                            <strong>Tue</strong>
+                            <?php if($brewery['open_time_tue'] === NULL) : ?>
+                            closed
+                            <?php else : ?>
+                            <?=e($brewery['open_time_tue']) ?> -
+                            <?php endif; ?>
+
+                            <?php if($brewery['close_time_tue'] === NULL) : ?>
+                            <?php else : ?>
+                            <?=e($brewery['close_time_tue']) ?>
+                            <?php endif; ?>
+                        </li>
+                        <li>
+                            <strong>Wed</strong>
+                            <?php if($brewery['open_time_wed'] === NULL) : ?>
+                            closed
+                            <?php else : ?>
+                            <?=e($brewery['open_time_wed']) ?> -
+                            <?php endif; ?>
+
+                            <?php if($brewery['close_time_wed'] === NULL) : ?>
+                            <?php else : ?>
+                            <?=e($brewery['close_time_wed']) ?>
+                            <?php endif; ?>
+                        </li>
+                        <li>
+                            <strong>Thu</strong>
+                            <?php if($brewery['open_time_thu'] === NULL) : ?>
+                            closed
+                            <?php else : ?>
+                            <?=e($brewery['open_time_thu']) ?> -
+                            <?php endif; ?>
+
+                            <?php if($brewery['close_time_thu'] === NULL) : ?>
+                            <?php else : ?>
+                            <?=e($brewery['close_time_thu']) ?>
+                            <?php endif; ?>
+                        </li>
+                        <li>
+                            <strong>Fri</strong>
+                            <?php if($brewery['open_time_fri'] === NULL) : ?>
+                            closed
+                            <?php else : ?>
+                            <?=e($brewery['open_time_fri']) ?> -
+                            <?php endif; ?>
+
+                            <?php if($brewery['close_time_fri'] === NULL) : ?>
+                            <?php else : ?>
+                            <?=e($brewery['close_time_fri']) ?>
+                            <?php endif; ?>
+                        </li>
+                        <li>
+                            <strong>Sat</strong>
+                            <?php if($brewery['open_time_sat'] === NULL) : ?>
+                            closed
+                            <?php else : ?>
+                            <?=e($brewery['open_time_sat']) ?> -
+                            <?php endif; ?>
+
+                            <?php if($brewery['close_time_sat'] === NULL) : ?>
+                            <?php else : ?>
+                            <?=e($brewery['close_time_sat']) ?>
+                            <?php endif; ?>
+                        </li>
+                        <li>
+                            <strong>Sun</strong>
+                            <?php if($brewery['open_time_sun'] === NULL) : ?>
+                            closed
+                            <?php else : ?>
+                            <?=e($brewery['open_time_sun']) ?> -
+                            <?php endif; ?>
+
+                            <?php if($brewery['close_time_sun'] === NULL) : ?>
+                            <?php else : ?>
+                            <?=e($brewery['close_time_sun']) ?>
+                            <?php endif; ?>
+                        </li>
                     </ul>
-                </td>
-                <td>1-1290 Kenaston Boulevard, Winnipeg, R3P 0R7</td>
-            </tr>
-
-            <!-- Table Row 2-->
-            <tr>
-                <td>Half Pints Brewing Co.</td>
-                <td>
-                    <ul>
-                        <li>Stir Stick Stout</li>
-                        <li>Little Scrapper IPA</li>
-                        <li>Bulldog Amber Ale</li>
-                        <li>St. James Pale Ale</li>
-                    </ul>
-                </td>
-                <td>550 Roseberry Street, Winnipeg, R3H 0T1</td>
-            </tr>
-
-            <!-- Table Row 3-->
-            <tr>
-                <td>Kilter Brewing Co.</td>
-                <td>
-                    <ul>
-                        <li>Stir Stick Stout</li>
-                        <li>Little Scrapper IPA</li>
-                        <li>Bulldog Amber Ale</li>
-                        <li>St. James Pale Ale</li>
-                    </ul>
-                </td>
-                <td>450 Rue Deschambault, Winnipeg, R2H 0K1</td>
-            </tr>
-
-            <!-- Table Row 1-->
-            <tr>
-                <td>Little Brown Jug Brewing Co.</td>
-                <td>
-                    <ul>
-                        <li>1919 Belgian Pale Ale</li>
-                        <li>Golden Ale</li>
-                        <li>Summer Lager</li>
-                        <li>Belgian IPA</li>
-                    </ul>
-                </td>
-                <td>336 William Avenue, Winnipeg, R3A 0H7</td>
-            </tr>
-
-            <!-- Table Row 1-->
-            <tr>
-                <td>Fort Garry Brewing Co.</td>
-                <td>
-                    <ul>
-                        <li>Lime Seltzer</li>
-                        <li>Cranberry Crush Radler</li>
-                        <li>Portage and Main IPA</li>
-                        <li>Northern Lite</li>
-                    </ul>
-                </td>
-                <td>130 Lowson Crescent, Winnipeg, R3P 2H8</td>
-            </tr>
-        </table>
+                </div>
+            </div>
+            <?php endforeach ;?>
+        </div>
+        <!-- /.row -->
     </div>
-    <!-- wrapper end -->
+    <!-- /.container -->
+</div>
+<!-- /.wrapper -->
 
-    <!-- Google Map -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3NzljToakmjNY0YncJhz0ygwVsgYYNj8&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-    <!-- content end -->
-    
+</div>
+<!-- wrapper end -->
+
+<!-- Google Map -->
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3NzljToakmjNY0YncJhz0ygwVsgYYNj8&callback=initMap&libraries=&v=weekly"
+    async></script>
+<!-- content end -->
+
 </body>
+
 </html>

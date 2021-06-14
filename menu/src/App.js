@@ -50,21 +50,21 @@ class App extends React.Component
             <div className="App">
                 <div id="wrapper">
 
-                    <h1 data-aos="fade-down">Menu Decider</h1>
+                    <h1 data-aos="fade-down" data-aos-delay="100">Menu Decider</h1>
 
                     <div className="container">
                         {/* Display Menu */}
                         <div id="menu">
-                            <h2>Menu</h2><br />
-                            <ul id="food-list">
+                            <h2 data-aos="fade-down" data-aos-delay="300">Menu</h2><br />
+                            <ul id="food-list" data-aos="fade-down" data-aos-delay="700">
                                 {foodItems}
                             </ul>
                         </div>
 
-                        <h2>Mixer</h2>
+                        <h2 data-aos="fade-up" data-aos-delay="900">Mixer</h2>
 
                         {/* Display Week */}
-                        <table>
+                        <table data-aos="fade-up" data-aos-delay="1100">
                             {/* Days of the week */}
                             <tr>
                                 <th className="day">Monday</th>
@@ -82,7 +82,7 @@ class App extends React.Component
                     </div>
 
                     {/* Button */}
-                    <div className="button">
+                    <div className="button" data-aos="fade-up" data-aos-delay="1300">
                         <button id="mix" onClick={this.handleClick}>MIX</button>
                     </div>
                 </div>

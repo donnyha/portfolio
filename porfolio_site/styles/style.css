@@ -96,6 +96,12 @@ nav ul li a:hover {
   color: #cf649a;
 }
 
+img#logo {
+  position: relative;
+  top: 15px;
+  left: 40px;
+}
+
 #logo a {
   font-family: "Concert One";
   font-size: 30px;

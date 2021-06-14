@@ -1,8 +1,12 @@
 // components
-import React from 'react'
+import React, {useEffect} from 'react'
 import Show from './components/Show'
 import Mix from './components/Mix'
 import foodsData from './foodsData'
+
+// aos library
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 // css
 import './styles/App.css'
@@ -25,7 +29,9 @@ class App extends React.Component
     }
 
     render()
-    {
+    {        
+        Aos.init()
+
         // map out the foodsData
         const foodItems = this.state.foods.map(item => <Show key={item.id} item={item} name={item.name} />)
 
@@ -44,7 +50,7 @@ class App extends React.Component
             <div className="App">
                 <div id="wrapper">
 
-                    <h1>Menu Decider</h1>
+                    <h1 data-aos="fade-down">Menu Decider</h1>
 
                     <div className="container">
                         {/* Display Menu */}

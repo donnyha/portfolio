@@ -13,7 +13,7 @@ html {
   height: 100%;
   color: #fff;
   background-color: #1b1b32;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "K2D", Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -135,6 +135,7 @@ h1 {
   margin-top: 185px;
   margin-left: 330px;
   font-size: 100px;
+  font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
 }
 
 .txt-type {

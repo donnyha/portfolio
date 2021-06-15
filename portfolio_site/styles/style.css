@@ -135,21 +135,15 @@ img#logo {
 h1 {
   text-align: left;
   font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
-  font-size: 100px;
-  width: 1010px;
+  font-size: 6.2vw;
+  width: 66vw;
 }
 
-.txt-type {
-  position: relative;
+#cursor {
+  display: inline-block;
+  width: 3.5vw;
   margin-left: 10px;
-}
-
-.txt-type::after {
-  content: "";
-  position: absolute;
-  top: 95px;
-  width: 60px;
-  border-bottom: 10px solid #fff;
+  border-bottom: 1vh solid #fff;
   -webkit-animation: blink 0.7s infinite ease-in-out;
           animation: blink 0.7s infinite ease-in-out;
 }

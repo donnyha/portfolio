@@ -141,22 +141,15 @@ img#logo {
   text-align: center;
 }
 
-.center-container-fixed {
-  display: inline-block;
-  margin-top: 150px;
-}
-
 h1 {
-  text-align: left;
   font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
   font-size: 6.2vw;
-  width: 66vw;
-}
 
-// .txt-type {
-//   position: relative;
-//   margin-left: 10px;
-// }
+  position: relative;
+  left: 23%;
+  text-align: left;
+  margin-top: 150px;
+}
 
 // .txt-type::after {
 //   content: "";

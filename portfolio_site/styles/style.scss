@@ -13,11 +13,6 @@ $pink: #cf649a;
   min-height: 100%;
 }
 
-@mixin responsive {
-  max-width: 100%;
-  height: auto;
-}
-
 @mixin flex-row-evenly {
   display: flex;
   flex-direction: row;
@@ -76,10 +71,6 @@ html {
 .change a {
   color: $pink;
   text-decoration: none;
-}
-
-.responsive {
-  @include responsive();
 }
 
 /* navigation */
@@ -181,6 +172,11 @@ h1 {
   // border: 1px solid #fff;
 }
 
+#main img {
+  width: 24px;
+  height: 24px;
+}
+
 .social-icons #mail {
   margin-top: 2px;
 }
@@ -240,6 +236,19 @@ h3 {
 
 #skills {
   margin-bottom: 65px;
+}
+
+#skills h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#skills #desktop-os {
+  display: block;
+}
+
+#skills #mobile-os {
+  display: none;
 }
 
 /* projects */
@@ -355,10 +364,22 @@ h3 {
   }
 
   #about-me #skills {
-    font-size: 12px;
+    font-size: 10px;
+  }
+
+  #about-me #skills #deskstop-os {
+    display: none;
+  }
+
+  #about-me #skills #mobile-os {
+    display: block;
   }
 
   /* projects */
+  #projects {
+    @include flex-column-center();
+  }
+
   #projects .row-odd,
   .row-even {
     @include flex-column-center();

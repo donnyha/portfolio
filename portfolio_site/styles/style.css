@@ -36,11 +36,6 @@ html {
   text-decoration: none;
 }
 
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-
 /* navigation */
 nav {
   background-color: rgba(27, 27, 50, 0.7);
@@ -174,6 +169,11 @@ h1 {
   width: 25vw;
 }
 
+#main img {
+  width: 24px;
+  height: 24px;
+}
+
 .social-icons #mail {
   margin-top: 2px;
 }
@@ -252,6 +252,19 @@ h3 {
 
 #skills {
   margin-bottom: 65px;
+}
+
+#skills h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#skills #desktop-os {
+  display: block;
+}
+
+#skills #mobile-os {
+  display: none;
 }
 
 /* projects */
@@ -383,9 +396,27 @@ h3 {
     font-size: 20px;
   }
   #about-me #skills {
-    font-size: 12px;
+    font-size: 10px;
+  }
+  #about-me #skills #deskstop-os {
+    display: none;
+  }
+  #about-me #skills #mobile-os {
+    display: block;
   }
   /* projects */
+  #projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   #projects .row-odd,
   .row-even {
     display: -webkit-box;

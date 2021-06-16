@@ -176,8 +176,8 @@ h1 {
 }
 
 .social-icons {
-  @include flex-row-evenly();
-  width: 500px;
+  @include flex-row-between();
+  width: 25vw;
   // border: 1px solid #fff;
 }
 
@@ -328,6 +328,57 @@ h3 {
   margin-bottom: 50px;
 }
 
+/* media queries */
+
+@media (max-width: 768px) {
+  /* navigation */
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  img#logo {
+    display: none;
+  }
+
+  span.social {
+    display: none;
+  }
+
+  /* main */
+  .social-icons {
+    width: 50vw;
+  }
+
+  /* about me */
+  #about-me #description {
+    font-size: 20px;
+  }
+
+  #about-me #skills {
+    font-size: 12px;
+  }
+
+  /* projects */
+  #projects .row-odd,
+  .row-even {
+    @include flex-column-center();
+  }
+
+  /* contacts */
+  #contact h2 {
+    margin-bottom: 30px;
+  }
+
+  #contact p {
+    font-size: 17px;
+  }
+
+  #contact #contact-container {
+    margin-bottom: 20px;
+  }
+}
+
+/* keyframes */
 @keyframes blink {
   0% {
     opacity: 0;

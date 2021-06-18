@@ -82,7 +82,7 @@ class App extends React.Component
                     </div>
 
                     {/* Button */}
-                    <div className="button" data-aos="fade-up" data-aos-delay="1300">
+                    <div className="button" data-aos="fade-up" data-aos-delay="1300" data-aos-offset="-500">
                         <button id="mix" onClick={this.handleClick}>MIX</button>
                     </div>
                 </div>

@@ -37,10 +37,10 @@ function initMap()
         zoom: 14
     });
 
- let burgerIcon = {
-     url: '/images/burger-icon.png',
-     scaledSize: new google.maps.Size(50, 50)
- }
+    let burgerIcon = {
+        url: '/images/burger-icon.png',
+        scaledSize: new google.maps.Size(50, 50)
+    }
 
     let userIcon = {
         url: '/images/user.png',
@@ -130,6 +130,11 @@ function getUserLocation(map, icon)
     let id = navigator.geolocation.watchPosition(successCall, errorCall);
 }
 
+/**
+ * mobile nav bar
+ *
+ * @return
+ */
 function navSlide()
 {
     const burger = document.getElementById('ham_logo');

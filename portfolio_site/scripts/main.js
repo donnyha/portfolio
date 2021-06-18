@@ -3,6 +3,7 @@ import TypeWriter from './TypeWriter.js';
 window.onload = () => {
     hideNav();
     initTypeWriter();
+    mobileNav();
 }
 
 /**
@@ -45,4 +46,20 @@ function initTypeWriter()
 
     // create TypeWriter
     new TypeWriter(txtElement, words, wait);
+}
+
+/**
+ * mobile nav bar
+ *
+ * @return
+ */
+function mobileNav()
+{
+    const burger = document.getElementById('burger-logo');
+    const nav = document.getElementById('navlinks');
+
+    // animate navigation
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    });
 }

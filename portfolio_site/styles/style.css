@@ -37,7 +37,7 @@ html {
 }
 
 /* navigation */
-#navbar-mobile {
+#mlogo {
   display: none;
 }
 
@@ -384,59 +384,6 @@ h3 {
   /* navigation */
   #navbar {
     display: none;
-  }
-  #burger-logo {
-    position: fixed;
-    text-align: center;
-    right: 20px;
-    top: 20px;
-    opacity: 1;
-    -webkit-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
-    z-index: 100000;
-  }
-  #navbar-mobile {
-    display: block;
-    position: fixed;
-    -webkit-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
-    min-height: 100%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  #navbar-mobile ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 100px;
-  }
-  #navbar-mobile ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  #navbar-mobile ul li a {
-    font-size: 30px;
-  }
-  /* main */
-  .social-icons {
-    width: 50vw;
   }
   /* about me */
   #about-me #description {

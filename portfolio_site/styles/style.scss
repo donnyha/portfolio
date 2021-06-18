@@ -345,6 +345,16 @@ h3 {
 
 @media (max-width: 768px) {
   /* navigation */
+  #burger-logo {
+    position: fixed;
+    text-align: center;
+    right: 20px;
+    top: 20px;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    z-index: 100000;
+  }
+
   #navbar {
     display: none;
   }
@@ -353,6 +363,22 @@ h3 {
     display: block;
     position: fixed;
     transition: 1s ease-in-out;
+    min-height: 100%;
+  }
+
+  #navbar-mobile ul {
+    @include flex-column-center();
+    margin-top: 50px;
+  }
+
+  #navbar-mobile ul li {
+    @include flex-column-center();
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #navbar-mobile ul li a {
+    font-size: 30px;
   }
 
   /* main */

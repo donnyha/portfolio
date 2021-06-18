@@ -64,7 +64,7 @@ class App extends React.Component
                         <h2 data-aos="fade-up" data-aos-delay="900">Mixer</h2>
 
                         {/* Display Week */}
-                        <table data-aos="fade-up" data-aos-delay="1100">
+                        <table id="mixed-food" data-aos="fade-up" data-aos-delay="1100">
                             {/* Days of the week */}
                             <tr>
                                 <th className="day">Monday</th>

@@ -74,6 +74,10 @@ html {
 }
 
 /* navigation */
+#navbar-mobile {
+  display: none;
+}
+
 nav {
   background-color: rgba(27, 27, 50, 0.7);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -341,16 +345,14 @@ h3 {
 
 @media (max-width: 768px) {
   /* navigation */
-  nav ul li a {
-    font-size: 12px;
-  }
-
-  img#logo {
+  #navbar {
     display: none;
   }
 
-  span.social {
-    display: none;
+  #navbar-mobile {
+    display: block;
+    position: fixed;
+    transition: 1s ease-in-out;
   }
 
   /* main */

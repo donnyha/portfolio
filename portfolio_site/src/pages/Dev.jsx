@@ -1,10 +1,17 @@
 import Nav from './../components/Dev/Nav';
+import Main from './../components/Dev/Main';
+import AboutMe from './../components/Dev/AboutMe';
+import Projects from './../components/Dev/Projects';
+import Contact from './../components/Dev/Contact';
 
 export default function Dev () {
   return (
-    <div className="h-screen text-white bg-[#1b1b32] font-body antialiased scrolling-touch">
+    <div>
       <Nav />
-      <h1>Dev Home Here</h1>
+      <Main />
+      <AboutMe />
+      <Projects />
+      <Contact />
     </div>
   );
 }

@@ -5,14 +5,14 @@ import { ReactComponent as ResumeLogo } from './../../images/svg/resume.svg';
 
 export default function Nav() {
   return (
-    <nav id="navbar" className="bg-nav-bg shadow-nav-shadow h-16 transition-top grid grid-cols-nav-gridCols fixed top-0 w-full z-50">
+    <nav id="navbar">
         <a href="/dev" id="logo-link">
           <SiteLogo data-aos="fade-down" />
         </a>
-        <ul className="flex justify-evenly items-center list-none m-0">
-            <li data-aos="fade-down" data-aos-delay="100" className="flex items-center"><a href="#about-me" className="text-white no-underline font-bold text-lg transition-colors hover:text-pink-500">about me</a></li>
-            <li data-aos="fade-down" data-aos-delay="200" className="flex items-center"><a href="#projects">projects</a></li>
-            <li data-aos="fade-down" data-aos-delay="300" className="flex items-center"><a href="#contact">contact</a></li>
+        <ul>
+            <li data-aos="fade-down" data-aos-delay="100"><a href="#about-me">about me</a></li>
+            <li data-aos="fade-down" data-aos-delay="200"><a href="#projects">projects</a></li>
+            <li data-aos="fade-down" data-aos-delay="300"><a href="#contact">contact</a></li>
         </ul>
         <span className="social">
             <a href="https://github.com/donnyha" target="_blank" rel="noreferrer" data-aos="fade-down" data-aos-delay="400">

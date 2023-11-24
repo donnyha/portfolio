@@ -18,6 +18,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.pink {
+  color: #cf649a;
+}
+
 .para {
   position: relative;
   background-position: center;
@@ -129,20 +133,11 @@ img#logo {
 
 h1 {
   font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
-  font-size: 6.2vw;
+  font-size: 5.2vw;
   position: relative;
-  left: 23%;
+  left: 10%;
   text-align: left;
   margin-top: 150px;
-}
-
-#cursor {
-  display: inline-block;
-  width: 3.5vw;
-  margin-left: 10px;
-  border-bottom: 1vh solid #fff;
-  -webkit-animation: blink 0.7s infinite ease-in-out;
-  animation: blink 0.7s infinite ease-in-out;
 }
 
 .center-container {

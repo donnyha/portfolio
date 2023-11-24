@@ -1,17 +1,24 @@
-import TypeWriter from './TypeWriter';
+import Typewriter from './Typewriter';
+const typewriterStrings = [
+    'Developer.', 
+    'Designer.',
+];
+
 
 export default function Main() {
   return (
     <div id="main" className="para">
-        <h1>
-            Hi,<br />
-            my name is Donny<br />
-            and I am a {' '}
-            <TypeWriter 
-                words={['Designer', 'Cyclist', 'Footballer', 'Developer']} 
-                wait={2000} 
-            />
-        </h1>
+        <div className="flex flex-row">
+            <div className="basis-1/6"></div>
+            <div className="basis-4/6">
+                <h1>
+                    Hi,<br />
+                    my name is Donny<br />
+                    and I am a <div className="inline-block"><Typewriter strings={ typewriterStrings } /></div>
+                </h1>
+            </div>
+            <div className="basis-1/6"></div>
+        </div>
 
         <div className="center-container">
             <div className="social-icons">

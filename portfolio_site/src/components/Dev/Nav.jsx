@@ -4,6 +4,12 @@ import { ReactComponent as LinkedInLogo } from './../../images/svg/linkedin.svg'
 import { ReactComponent as ResumeLogo } from './../../images/svg/resume.svg';
 
 export default function Nav() {
+  let showNav = true
+  // when scroll down is detected
+    // showNav = false
+  // when scroll up is detected
+    // showNav = true
+
   return (
     <nav id="navbar">
       <span className="social">

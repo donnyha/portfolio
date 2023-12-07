@@ -5,10 +5,10 @@ import { ReactComponent as Arrow } from './../../images/svg/arrow.svg';
 import Typewriter from './Typewriter';
 
 const typewriterStrings = [
-    'Developer.', 
-    'Analyst.',
-    'Designer.',
-    'Problem-solver.',
+    'a Developer.', 
+    'a Designer.',
+    'an Analyst.',
+    'a Problem-solver.',
 ];
 
 
@@ -21,7 +21,7 @@ export default function Main() {
                 <h1>
                     Hi,<br />
                     my name is Donny<br />
-                    and I am a <div className="inline-block"><Typewriter strings={ typewriterStrings } /></div>
+                    and I am <div className="inline-block"><Typewriter strings={ typewriterStrings } /></div>
                 </h1>
             </div>
             <div className="basis-1/6"></div>

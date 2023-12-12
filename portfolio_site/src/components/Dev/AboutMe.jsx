@@ -19,10 +19,12 @@ export default function AboutMe() {
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>SASS</li>
+                            <li>Tailwind CSS</li>
                             <li>JavaScript</li>
+                            <li>Vue.js</li>
+                            <li>React</li>
                             <li>jQuery</li>
                             <li>npm</li>
-                            <li>React</li>
                         </ul>
                     </div>
 
@@ -31,9 +33,10 @@ export default function AboutMe() {
                         <ul>
                             <li>PHP</li>
                             <li>Laravel</li>
-                            <li>Composer</li>
-                            <li>XML</li>
-                            <li>JSON</li>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>Spring Boot</li>
                         </ul>
                     </div>
 
@@ -41,6 +44,8 @@ export default function AboutMe() {
                         <h4>Database</h4>
                         <ul>
                             <li>MySQL</li>
+                            <li>MariaDB</li>
+                            <li>MongoDB</li>
                             <li>SQLite</li>
                         </ul>
                     </div>
@@ -72,10 +77,7 @@ export default function AboutMe() {
                     <div id="design" className="skill" data-aos="fade-up" data-aos-delay="450">
                         <h4>Design</h4>
                         <ul>
-                            <li>Linux</li>
-                            <li>Adobe Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>Animate</li>
+                            <li>Adobe Creative Suite</li>
                             <li>Figma</li>
                         </ul>
                     </div>

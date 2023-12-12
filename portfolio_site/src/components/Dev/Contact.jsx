@@ -1,3 +1,8 @@
+import { ReactComponent as GitHubLogo } from './../../images/svg/github.svg';
+import { ReactComponent as LinkedInLogo } from './../../images/svg/linkedin.svg';
+import { ReactComponent as ResumeLogo } from './../../images/svg/resume.svg';
+
+
 export default function Projects() {
   return (
     <div id="contact" className="para">
@@ -12,9 +17,21 @@ export default function Projects() {
 
         <div className="center-container">
             <div className="social-icons">
-                <span><a href="https://github.com/donnyha" target="_blank" rel="noreferrer"><img className="responsive" src="images/svg/github.svg" alt="github" height="30px" data-aos="fade-up" data-aos-delay="150" data-aos-offset="-100" /></a></span>
-                <span><a href="https://www.linkedin.com/in/donnyha/" target="_blank" rel="noreferrer"><img className="responsive" src="images/svg/linkedin.svg" alt="linkedin" height="30px" data-aos="fade-up" data-aos-delay="200" data-aos-offset="-100" /></a></span>
-                <span><a href="./documents/donnyha_resume.pdf" target="_blank"><img className="responsive" id="mail" src="images/svg/resume.svg" alt="email" height="30px" data-aos="fade-up" data-aos-delay="250" data-aos-offset="-100" /></a></span>
+                <span>
+                    <a href="https://github.com/donnyha" target="_blank" rel="noreferrer">
+                        <GitHubLogo className="responsive" alt="github" height="30px" data-aos="fade-up" data-aos-delay="150" data-aos-offset="-100" />
+                    </a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/in/donnyha/" target="_blank" rel="noreferrer">
+                        <LinkedInLogo className="responsive" alt="linkedin" height="30px" data-aos="fade-up" data-aos-delay="200" data-aos-offset="-100" />
+                    </a>
+                </span>
+                <span>
+                    <a href="./documents/donnyha_resume.pdf" target="_blank">
+                        <ResumeLogo id="mail" className="responsive" alt="resume" height="30px" data-aos="fade-up" data-aos-delay="250" data-aos-offset="-100" />
+                    </a>
+                </span>
             </div>
         </div>
     </div>

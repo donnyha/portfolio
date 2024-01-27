@@ -1,8 +1,7 @@
 /* Variables */
 /* Mixins */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,
@@ -43,12 +42,9 @@ html {
 nav {
   background-color: #d51e26;
   height: 70px;
-  -webkit-transition: top 0.3s;
   transition: top 0.3s;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 9fr 2fr;
-      grid-template-columns: 2fr 9fr 2fr;
+  grid-template-columns: 2fr 9fr 2fr;
   position: fixed;
   top: 0;
   min-width: 100%;
@@ -56,27 +52,16 @@ nav {
 }
 
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin: 0;
   list-style-type: none;
 }
 
 nav ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 nav ul li a {
@@ -99,19 +84,10 @@ nav ul li a:hover {
 }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .social img {
@@ -150,31 +126,20 @@ h1 {
   color: #fff;
   height: auto;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 div.three-col {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 10px;
 }
 
 .col1 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
+  grid-template-rows: 50% 50%;
   margin-right: 10px;
 }
 
@@ -194,16 +159,9 @@ div.three-col {
 }
 
 .col2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #burger3 {
@@ -214,20 +172,14 @@ div.three-col {
 }
 
 .col3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .col3 #locally {
   font-size: 140px;
   font-weight: 700;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   position: relative;
   top: 16%;
   right: 41%;
@@ -251,21 +203,14 @@ div.three-col {
 
 /* Food Menu */
 #food {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   max-height: 100%;
 }
 
 #food .col-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #food .col-left h2 {
@@ -277,16 +222,9 @@ div.three-col {
 }
 
 #food .col-left .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #food .col-left .food_name {
@@ -308,10 +246,8 @@ div.three-col {
 #drinks {
   background-color: #28292a;
   color: #fff;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   max-height: 100%;
 }
 
@@ -325,13 +261,8 @@ div.three-col {
 }
 
 #drinks .col-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #drinks .col-right h2 {
@@ -343,16 +274,9 @@ div.three-col {
 }
 
 #drinks .col-right .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #drinks .col-right .drink_name {
@@ -382,16 +306,9 @@ div.three-col {
 }
 
 #addresses {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #exchange,
@@ -452,5 +369,4 @@ div.three-col {
   #drinks .col-right .drink_name {
     font-size: 20px;
   }
-}
-/*# sourceMappingURL=desktop_style.css.map */
+}/*# sourceMappingURL=desktop_style.css.map */

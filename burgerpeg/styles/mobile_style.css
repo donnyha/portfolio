@@ -1,8 +1,7 @@
 /* Variables */
 /* Mixins */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,
@@ -47,10 +46,8 @@ html {
 nav {
   background-color: #d51e26;
   height: 70px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 2fr 9fr 2fr;
-      grid-template-rows: 2fr 9fr 2fr;
+  grid-template-rows: 2fr 9fr 2fr;
   position: fixed;
   top: 0;
   min-width: 100%;
@@ -58,53 +55,35 @@ nav {
 }
 
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
   position: absolute;
   top: 70px;
   right: 0px;
   background-color: #d51e26;
   height: 92vh;
   min-width: 45%;
-  -webkit-transform: translateX(140%);
-          transform: translateX(140%);
-  -webkit-transition: -webkit-transform 0.5s ease-in;
-  transition: -webkit-transform 0.5s ease-in;
+  transform: translateX(140%);
   transition: transform 0.5s ease-in;
-  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .nav-active {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .nav-deactive {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 nav ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: right;
+  margin-top: 10%;
+  margin-right: 20px;
 }
 
 nav ul li a {
@@ -168,13 +147,8 @@ h1 {
 }
 
 #food .col-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #food .col-left h2 {
@@ -186,16 +160,9 @@ h1 {
 }
 
 #food .col-left .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #food .col-left .food_name {
@@ -220,13 +187,8 @@ h1 {
 }
 
 #drinks .col-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #drinks .col-right h2 {
@@ -238,16 +200,9 @@ h1 {
 }
 
 #drinks .col-right .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #drinks .col-right .drink_name {
@@ -277,16 +232,9 @@ h1 {
 }
 
 #addresses {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #exchange,
@@ -321,5 +269,4 @@ h1 {
 #contact #hours,
 #general {
   margin-bottom: 100px;
-}
-/*# sourceMappingURL=mobile_style.css.map */
+}/*# sourceMappingURL=mobile_style.css.map */

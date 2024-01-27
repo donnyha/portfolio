@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
-import { ReactComponent as SiteLogo } from './../../images/svg/logo-dh.svg';
-import { ReactComponent as GitHubLogo } from './../../images/svg/github.svg';
-import { ReactComponent as LinkedInLogo } from './../../images/svg/linkedin.svg';
-import { ReactComponent as ResumeLogo } from './../../images/svg/resume.svg';
+import { ReactComponent as SiteLogo } from './../images/svg/logo-dh.svg';
+import { ReactComponent as GitHubLogo } from './../images/svg/github.svg';
+import { ReactComponent as LinkedInLogo } from './../images/svg/linkedin.svg';
+import { ReactComponent as ResumeLogo } from './../images/svg/resume.svg';
 
 export default function Nav() {
   const [ show, setShow ] = useState(true);

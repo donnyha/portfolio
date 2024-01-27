@@ -1,5 +1,17 @@
+import Nav from '../components/Nav';
+import Home from '../components/Home';
+import AboutMe from '../components/AboutMe';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+
 export default function Main () {
   return (
-    <h1>Main Home Here</h1>
+    <div>
+      <Nav />
+      <Home />
+      <AboutMe />
+      <Projects />
+      <Contact />
+    </div>
   );
 }

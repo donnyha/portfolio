@@ -1,8 +1,8 @@
-import { ReactComponent as GitHubLogo } from './../../images/svg/github.svg';
-import { ReactComponent as LinkLogo } from './../../images/svg/link.svg';
-import Winnitap from './../../images/winnitap.png';
-import Menu from './../../images/menu.png';
-import Burgerpeg from './../../images/burgerpeg.png';
+import { ReactComponent as GitHubLogo } from './../images/svg/github.svg';
+import { ReactComponent as LinkLogo } from './../images/svg/link.svg';
+import Winnitap from './../images/winnitap.png';
+import Menu from './../images/menu.png';
+import Burgerpeg from './../images/burgerpeg.png';
 
 export default function Projects() {
     const title = 'Projects';

@@ -36,7 +36,7 @@ export default function Nav() {
       <span className="social">
         <span></span>
         
-        <a href="/dev" id="logo-link">
+        <a href="/" id="logo-link">
           <SiteLogo data-aos="fade-down" />
         </a>
         
@@ -54,7 +54,7 @@ export default function Nav() {
           <a href="https://www.linkedin.com/in/donnyha/" target="_blank" rel="noreferrer" data-aos="fade-down" data-aos-delay="500">
             <LinkedInLogo />
           </a>
-          <a href="./documents/donnyha_resume.pdf" target="_blank" rel="noreferrer" data-aos="fade-down" data-aos-delay="600">
+          <a href="../../public/documents/donny_ha_resume.pdf" target="_blank" rel="noreferrer" data-aos="fade-down" data-aos-delay="600">
             <ResumeLogo />
           </a>
       </span>

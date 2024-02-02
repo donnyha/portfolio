@@ -1,6 +1,6 @@
 import { ReactComponent as GitHubLogo } from './../images/svg/github.svg';
 import { ReactComponent as LinkLogo } from './../images/svg/link.svg';
-import Winnitap from './../images/winnitap.png';
+import GoldenBoy from './../images/golde-boy.png';
 import Menu from './../images/menu.png';
 import Burgerpeg from './../images/burgerpeg.png';
 
@@ -13,26 +13,26 @@ export default function Projects() {
 
             <div className="row-odd" data-aos="fade-left" data-aos-delay="100" data-aos-offset="250">
                 <div className="img-container overflow-hidden">
-                    <a href="http://capstone.wdd-donny.xyz/">
-                        <img src={ Winnitap } alt="winnitap" height="189px" className="hover:scale-110 transition duration-500 cursor-pointer object-cover" />
+                    <a href="/projects/golden-boy-brewing-company">
+                        <img src={ GoldenBoy } alt="winnitap" height="189px" className="hover:scale-110 transition duration-500 cursor-pointer object-cover" />
                     </a>
                 </div>
 
                 <div className="project-container m-1">
-                    <h3 className="project-title">Winnitap</h3>
-                    <p className="project-description">Beer comparison site that allows users to leave reviews on beer they drank</p>
+                    <h3 className="project-title">Golden Boy Brewing Co.</h3>
+                    <p className="project-description">Brewery site built with custom theme</p>
                     <br />
 
                     <p className="project-skills">
-                        <strong>Front End</strong>: HTML, SASS, JavaScript, jQuery<br />
-                        <strong>Back End</strong>: PHP, MySQL
+                        <strong>Front End</strong>: HTML, CSS, JavaScript, jQuery<br />
+                        <strong>Back End</strong>: WordPress
                     </p>
 
                     <div className="external-links">
-                        <a href="https://github.com/donnyha/portfolio/tree/main/winnitap" target="_blank" rel="noreferrer" className="inline-block m-2">
+                        <a href="https://github.com/donnyha/golden-boy-brewing-company" target="_blank" rel="noreferrer" className="inline-block m-2">
                             <GitHubLogo alt="github" height="22px" />
                         </a>
-                        <a href="http://capstone.wdd-donny.xyz/" target="_blank" rel="noreferrer" className="inline-block m-2">
+                        <a href="/projects/golden-boy-brewing-company" target="_blank" rel="noreferrer" className="inline-block m-2">
                             <LinkLogo alt="link" height="22px" />
                         </a>
                     </div>
@@ -46,14 +46,14 @@ export default function Projects() {
                     <br />
 
                     <p className="project-skills">
-                        <strong>Front End</strong>: HTML, JavaScript, React<br />
+                        <strong>Front End</strong>: HTML, Tailwind CSS, Vue.js<br />
                     </p>
 
                     <div className="external-links">
-                        <a href="https://github.com/donnyha/portfolio/tree/main/menu" target="_blank" rel="noreferrer" className="inline-block m-2">
+                        <a href="https://github.com/donnyha/random-recipe-generator" target="_blank" rel="noreferrer" className="inline-block m-2">
                             <GitHubLogo />
                         </a>
-                        <a href="http://menu.donnyha.com/" target="_blank" rel="noreferrer" className="inline-block m-2">
+                        <a href="/projects/menu-decider" target="_blank" rel="noreferrer" className="inline-block m-2">
                             <LinkLogo alt="link" />
                         </a>
                     </div>
@@ -81,10 +81,10 @@ export default function Projects() {
                     </p>
 
                     <div className="external-links">
-                        <a href="https://github.com/donnyha/portfolio/tree/main/burgerpeg" target="_blank" rel="noreferrer" className="inline-block m-2">
+                        <a href="https://github.com/donnyha/burgerpeg" target="_blank" rel="noreferrer" className="inline-block m-2">
                             <GitHubLogo alt="github" />
                         </a>
-                        <a href="http://burgerpeg.donnyha.com/" target="_blank" rel="noreferrer" className="inline-block m-2">
+                        <a href="/projects/burgerpeg" target="_blank" rel="noreferrer" className="inline-block m-2">
                             <LinkLogo alt="link" />
                         </a>
                     </div>

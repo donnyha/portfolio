@@ -66,7 +66,7 @@ export default function Projects() {
 
             <div className="row-odd" data-aos="fade-left" data-aos-delay="100" data-aos-offset="250">
                 <div className="img-container overflow-hidden">
-                    <a href="http://burgerpeg.donnyha.com/">
+                    <a href="/projects/burgerpeg">
                         <img src={ Burgerpeg } alt="burgerpeg" height="189px" className="hover:scale-110 transition duration-500 cursor-pointer object-cover" />
                     </a>
                 </div>

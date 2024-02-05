@@ -54,7 +54,7 @@ export default function Nav() {
           <a href="https://www.linkedin.com/in/donnyha/" target="_blank" rel="noreferrer" data-aos="fade-down" data-aos-delay="500">
             <LinkedInLogo />
           </a>
-          <a href="../../public/documents/donny_ha_resume.pdf" target="_blank" rel="noreferrer" data-aos="fade-down" data-aos-delay="600">
+          <a href="./documents/Donny_Ha_Resume.pdf" target="_blank" rel="noreferrer" data-aos="fade-down" data-aos-delay="600">
             <ResumeLogo />
           </a>
       </span>

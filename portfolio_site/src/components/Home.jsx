@@ -40,14 +40,14 @@ export default function Main() {
                     </a>
                 </span>
                 <span>
-                    <a href="./documents/donnyha_resume.pdf" target="_blank">
+                    <a href="./documents/Donny_Ha_Resume.pdf" target="_blank">
                         <ResumeLogo className="responsive" alt="github" height="30px" data-aos="fade-up" data-aos-delay="900" data-aos-offset="-300" />
                     </a>
                 </span>
             </div>
         </div>
 
-        <div className="scroll-down">
+        <div className="scroll-down" data-aos="fade-up" data-aos-delay="1200">
             <a href="#about-me">
                 <p>scroll down</p>
                 <Arrow src="images/svg/arrow.svg" alt="arrow down" height="30px" />

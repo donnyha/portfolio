@@ -28,7 +28,7 @@ export default function Projects() {
                     </a>
                 </span>
                 <span>
-                    <a href="./documents/donnyha_resume.pdf" target="_blank">
+                    <a href="./documents/Donny_Ha_Resume.pdf" target="_blank">
                         <ResumeLogo id="mail" className="responsive" alt="resume" height="30px" data-aos="fade-up" data-aos-delay="250" data-aos-offset="-100" />
                     </a>
                 </span>

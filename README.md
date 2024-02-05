@@ -1,2 +1,0 @@
-# portfolio
-Donny Ha Portfolio

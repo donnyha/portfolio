@@ -122,7 +122,9 @@ h1 {
 }
 
 #parallax1 {
-  background-image: url(/images/burger1.jpg);
+  background: url("../images/burger1.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .heading {

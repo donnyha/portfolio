@@ -105,7 +105,7 @@ h1 {
 }
 
 #parallax1 {
-  background: url("/images/burger1.jpg");
+  background: url("../images/burger1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -145,7 +145,7 @@ div.three-col {
 }
 
 .col1 #burger1 {
-  background: url("/images/burger8.jpg");
+  background: url("../images/burger8.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,7 +153,7 @@ div.three-col {
 }
 
 .col1 #burger2 {
-  background: url("/images/burger7.jpg");
+  background: url("../images/burger7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,7 +166,7 @@ div.three-col {
 }
 
 #burger3 {
-  background: url("/images/burger9.jpg");
+  background: url("../images/burger9.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,7 +235,7 @@ div.three-col {
 }
 
 #food #food-burger {
-  background: url("/images/burger3.jpg");
+  background: url("../images/burger3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,7 +253,7 @@ div.three-col {
 }
 
 #drinks #drinks-beer {
-  background: url("/images/beer.jpg");
+  background: url("../images/beer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

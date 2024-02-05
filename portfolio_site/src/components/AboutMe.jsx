@@ -19,6 +19,7 @@ export default function AboutMe() {
                             <li>CSS3</li>
                             <li>SASS</li>
                             <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
                             <li>JavaScript</li>
                             <li>Vue.js</li>
                             <li>React</li>
@@ -31,6 +32,7 @@ export default function AboutMe() {
                         <h4>Back End</h4>
                         <ul>
                             <li>PHP</li>
+                            <li>WordPress</li>
                             <li>Laravel</li>
                             <li>Node.js</li>
                             <li>Python</li>
@@ -52,7 +54,6 @@ export default function AboutMe() {
                     <div id="version-control" className="skill" data-aos="fade-up" data-aos-delay="250">
                         <h4>Tools</h4>
                         <ul>
-                            <li>WordPress</li>
                             <li>Git</li>
                             <li>Linux</li>
                             <li>macOS</li>

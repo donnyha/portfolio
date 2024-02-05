@@ -68,7 +68,7 @@ export default function Projects() {
 
                 </div>
                 <div className="img-container overflow-hidden">
-                    <a href="http://menu.donnyha.com/" target="_blank" rel="noreferrer"><img src={ Menu } alt="menu decider" height="189px" className="hover:scale-110 transition duration-500 cursor-pointer object-cover" /></a>
+                    <a href="/projects/menu-decider" target="_blank" rel="noreferrer"><img src={ Menu } alt="menu decider" height="189px" className="hover:scale-110 transition duration-500 cursor-pointer object-cover" /></a>
                 </div>
             </div>
 
